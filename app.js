@@ -3,9 +3,12 @@ const getMessage = require('./routes/routes')
 
 const app = express()
 
-app.use('/home', (req, res) => {
+//Say hell at indes
+app.use('/', (req, res) => {
   res.send('Hello world')
 })
+
+//profile route
 app.use('/', getMessage)
 
 const port = 3000
