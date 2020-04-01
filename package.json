@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"*.js\" --quiet --fix",
-    "format": "npm run prettier",
-    "prettier": "prettier \"*.js\" --write",
+    "format": "prettier \"**/*.+(js)\" --write",
+    "lint": "eslint \"**/*.+(js)\" --quiet --fix",
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
