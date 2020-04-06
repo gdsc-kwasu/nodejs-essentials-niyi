@@ -7,5 +7,3 @@ const {getMessage} = require('../controller/index')
 router.get('/profile', getMessage)
 
 module.exports = router
-
-console.log('hello')
